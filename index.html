@@ -7,9 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
   
-  <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Photography Portfolio</title>
   
-  <style>
+    <style>
   
     * { box-sizing: border-box; }
     
@@ -25,7 +27,28 @@
   padding-top: 15px;
   text-align: center;
   background: #3B3939;
+  position: relative;
 }
+  
+  .fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+  .fa:hover {
+  opacity: 0.7;
+}
+
+  .fa-instagram {
+  color: white;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}
+      
   h1 { 
   text-align: center;
   color: #3B3939;
@@ -106,6 +129,7 @@
   transform: scale(1.1);
   filter: brightness(80%);
 }
+
   @media screen and (max-width: 800px) {
   .column {
   flex: 50%;
@@ -135,6 +159,8 @@
   
 <body>
     <div class="header">
+    <a href="https://www.instagram.com/katiemc888?igsh=OXl4aWhtemR6d20z" class="fa fa-instagram"></a>
+
       <h1>Katie McLean Photography</h1>
       <nav>
         <ul>
