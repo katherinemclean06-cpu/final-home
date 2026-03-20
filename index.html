@@ -23,11 +23,30 @@
   a { color: white; }
      
   .header {
+  position: relative;
   padding-bottom: 50px;
   padding-top: 15px;
   text-align: center;
-  background: #3B3939;
+  overflow: hidden;
+  background-image: url("corn2.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  .header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("lavender.jpeg");
+  background-size: cover;
+  background-position: 53% 47%;
+
+  filter: brightness(40%); /* ONLY affects image */
+  z-index: 0;
+}
+  .header * {
   position: relative;
+  z-index: 1;
 }
   
   .fa {
@@ -50,24 +69,24 @@
 }
       
   h1 { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
   text-align: center;
-  color: #3B3939;
+  color: black;
   font-optical-sizing: auto;
   background-color: white;
   font-size: 95px;
-  padding: 40px;
+  padding: 10px 30px;
   font-family: "Truculenta", Georgia, serif;
   }
   
-  h2 {
-  text-align: center;
-  color: #3B3939;
-  font-optical-sizing: auto;
-  background-color: white;
-  font-size: 75px;
-  padding: 0px;
-  margin: 5px;
-  font-family: "Truculenta", Georgia, serif;
+  h1::before,
+  h1::after {
+  content: "★";
+  color: black;
+  font-size: 40px; /* slightly bigger to match h1 */
   }
   
   nav {
@@ -76,7 +95,7 @@
   font-size: 25px;
   font-style: normal;
   text-align: center;
-  width: 900; 
+  width: 725px; 
   margin: auto;
 }
   ul{
@@ -89,12 +108,16 @@
   ul li {
   display: block;
   text-align: center;
-  padding: 25px;
+  padding: 0px 25px 15px;
   float: left;
+  line-height: 2.5;
   }
   
   ul li a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 10px;
   color: white;
   }
   
@@ -165,7 +188,6 @@
       <nav>
         <ul>
           <li><a href="/">HOME</a></li>
-          <li><a href="/">SHOOTS</a></li>
           <li><a href="/">PEOPLE</a></li>
           <li><a href="/">PLACES</a></li>
           <li><a href="/">NATURE</a></li>
@@ -173,8 +195,6 @@
       </ul>
     </nav>
   </div>
-  
-  <h2>PLACES:</h2>
   
   <div class="row">
     <div class="column">
