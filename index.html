@@ -28,7 +28,7 @@
   padding-top: 15px;
   text-align: center;
   overflow: hidden;
-  background-image: url("corn2.JPG");
+  background-image: url("zoe2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -37,7 +37,7 @@
   position: absolute;
   inset: 0;
 
-  background-image: url("lavender.jpeg");
+  background-image: url("zoe2.jpeg");
   background-size: cover;
   background-position: 53% 47%;
 
@@ -74,7 +74,7 @@
   justify-content: center;
   gap: 25px;
   text-align: center;
-  color: black;
+  color: #6A251A;
   font-optical-sizing: auto;
   background-color: white;
   font-size: 95px;
@@ -85,7 +85,7 @@
   h1::before,
   h1::after {
   content: "★";
-  color: black;
+  color: #6A251A;
   font-size: 40px; /* slightly bigger to match h1 */
   }
   
@@ -152,21 +152,42 @@
   transform: scale(1.1);
   filter: brightness(80%);
 }
-
+   .lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+  .lightbox:target {
+  display: flex;
+}
+  .lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+  .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+}
   @media screen and (max-width: 800px) {
   .column {
   flex: 50%;
   max-width: 50%;
     }
-  }
-    
+}
   @media screen and (max-width: 600px) {
   .column {
   flex: 100%;
   max-width: 100%;
     }
-  }
-  
+}
   footer {
   font-style: Arial, georgia, sans serif;
   font-size: 20px;
@@ -179,12 +200,11 @@
   }
     </style>
   </head>
-  
 <body>
     <div class="header">
     <a href="https://www.instagram.com/katiemc888?igsh=OXl4aWhtemR6d20z" class="fa fa-instagram"></a>
 
-      <h1>Katie McLean Photography</h1>
+    <h1>Katie McLean Photography</h1>
       <nav>
         <ul>
           <li><a href="/">HOME</a></li>
@@ -198,124 +218,770 @@
   
   <div class="row">
     <div class="column">
-  <div class="img-container"><img src="thrift1.png" style="width:100%" alt="Hands sifting through nice suit jackets at a thrift store."></div>
-  <div class="img-container"><img src="boats1.jpeg" style="width:100%" alt="A white boat in the water on an ocean coastline next to a row of colourful sheds."></div>
-  <div class="img-container"><img src="boats.jpeg" style="width:100%" alt="A white boat next to a dirt path with a sunset in the background."></div>
-  <div class="img-container"><img src="bridge.jpeg" style="width:100%" alt="Pont Du Gard France, an old aqueduct stone bridge."></div>
-  <div class="img-container"><img src="building.jpeg" style="width:100%" alt="An image of an oddly shaped glass office building downtown Toronto."></div>
-  <div class="img-container"><img src="cafe.jpeg" style="width:100%" alt="The storefront of the Starlight Cafe in Stratford, a blue front with a bright orange sign."></div>
-  <div class="img-container"><img src="cafe1.jpeg" style="width:100%" alt="Image of a small cafe in Waterloo with cool gold lights and black stools."></div>
-  <div class="img-container"><img src="car.jpeg" style="width:100%" alt="A lone black car in an empty snowy parking lot with orange sky behind."></div>
-  <div class="img-container"><img src="Halloween.JPG" style="width:100%" alt="The lanky hand of a creepy halloween decoration reaching toward the camera."></div>
-  <div class="img-container"><img src="beach.jpeg" style="width:100%" alt="Sandy beach on a sunny day."></div>
-  <div class="img-container"><img src="Ducks.JPG" style="width:100%" alt="Two duck swimming up the river on a cloudy day."></div>
-  <div class="img-container"><img src="fall.jpeg" style="width:100%" alt="A maple tree on a sunny tree with the leaves starting to turn orange."></div>
-  <div class="img-container"><img src="turtle.jpeg" style="width:100%" alt="Sea turtle in an aquarium tank."></div>
-  <div class="img-container"><img src="jack.JPG" style="width:100%" alt="A small black and white dog looking up at the camera."></div>
-  <div class="img-container"><img src="corncob2.JPG" style="width:100%" alt="A corn cob half peeled with dead corn stalks in the background."></div>
-  <div class="img-container"><img src="beach1.jpeg" style="width:100%" alt="A sand beach at dusk with a sunset starting on the horizon."></div>
-  <div class="img-container"><img src="berries.jpeg" style="width:100%" alt="A red berry bush with green leaves under the bright sun."></div>
-  <div class="img-container"><img src="cat.jpeg" style="width:100%" alt="Tabby cat with orange eyes leaning on a door window."></div>
-  <div class="img-container"><img src="flower.jpeg" style="width:100%" alt="Blooming pink flowers on a greenish-brown tree."></div>
-  <div class="img-container"><img src="flower6.jpeg" style="width:100%" alt="White bell-shaped flowers with brown spots with fresh dew on the petals."></div>
-  <div class="img-container"><img src="festival1.jpeg" style="width:100%" alt="A girl with blonde hair wearing blue jeans walking towards a crowd of people at a music festival."></div>
-  <div class="img-container"><img src="oliver7.png" style="width:100%" alt="Blonde-haired man looking to up at the CN Tower behind him."></div>
-  <div class="img-container"><img src="zoe2.jpeg" style="width:100%" alt="A blonde girl sitting on a wooden dock next to a lake."></div>
-  <div class="img-container"><img src="zoe4.jpeg" style="width:100%" alt="A blonde-haired girl sitting on a wooden dock next to a lake, smiling at the camera."></div>
-  <div class="img-container"><img src="oliver4.png" style="width:100%" alt="A blonde man looking to his side with a white building behind him."></div>
-  </div>
   
-  <div class="column">
-  <div class="img-container"><img src="church.jpeg" style="width:100%" alt="A white church with a red roof on a hill with a sunset behind it."></div>
-  <div class="img-container"><img src="katie.png" style="width:100%" alt="A blonde haired girl sitting in the dark, illuminated by red light."></div>
-  <div class="img-container"><img src="lavender2.jpeg" style="width:100%" alt="Bumble bee perches on a sprout of light purple lavender."></div>
-  <div class="img-container"><img src="zoe7.jpeg" style="width:100%" alt="A blonde-haired girl looking behind her at the orange sunset at a music festival."></div>
-  <div class="img-container"><img src="Club.jpeg" style="width:100%" alt="A neon sign that says 'please don't do coke in the bathroom' in a dark club with purple and red lights."></div>
-  <div class="img-container"><img src="concert.jpeg" style="width:100%" alt="Sun setting behind a crowd of people outside of Budweiser stadium."></div>
-  <div class="img-container"><img src="feeder.jpeg" style="width:100%" alt="A bird feeder shaped like a bluejay against a pink sun setting over the ocean."></div>
-  <div class="img-container"><img src="hotel.jpeg" style="width:100%" alt="Leather sofas in a big room with old wood and ornate decor."></div>
-  <div class="img-container"><img src="newfoundland.jpeg" style="width:100%" alt="A blonde woman leaning on a railing next to a pond with mountains and a sunset behind her."></div>
-  <div class="img-container"><img src="pier.jpeg" style="width:100%" alt="A set of white boats on a wooden slat pier next to the ocean, with the sun starting to set in the background."></div>
-  <div class="img-container"><img src="sand.jpeg" style="width:100%" alt="A piece of colourful fabric with a silver bell draped over a sandy beach with a low, hazy sun in the background."></div>
-  <div class="img-container"><img src="statue.jpeg" style="width:100%" alt="statue of a lion in front of the New York City public library."></div>
-  <div class="img-container"><img src="stonewall.jpeg" style="width:100%" alt="An old stone wall with 'Chateau' carved into the side."></div>
-  <div class="img-container"><img src="sunset.jpeg" style="width:100%" alt="A colourful sunset outside of the window, seen behind a made bed in a dark room."></div>
-  <div class="img-container"><img src="toronto.jpeg" style="width:100%" alt="A tall glass building in Toronto on a sunny day."></div>
-  <div class="img-container"><img src="sunflower2.JPG" style="width:100%" alt="Two dead sunflowers bent over each other on a cloudy fall day."></div>
-  <div class="img-container"><img src="ice.jpeg" style="width:100%" alt="Light shining through the ice-coated slim branches of a weeping willow tree."></div>
-  <div class="img-container"><img src="plant2.png" style="width:100%" alt="A fern leaf in front of a glass building as it starts to get dark out."></div>
-  <div class="img-container"><img src="lavender3.jpeg" style="width:100%" alt="Sprouts of dark purple lavender on a cloudy day."></div>
-  <div class="img-container"><img src="fish.jpeg" style="width:100%" alt="A gray fish in an aquarium tank, nesstled in with some coral."></div>
-  <div class="img-container"><img src="zoe1.jpeg" style="width:100%" alt="A blonde-haired girl sitting on a wooden dock on next to a lake."></div>
-  <div class="img-container"><img src="lifeguard.jpeg" style="width:100%" alt="A bright red wooden stand holding a life saver against the dark blue ocean."></div>
-  <div class="img-container"><img src="lobby.jpeg" style="width:100%" alt="A set of ornate wood rocking chairs in an old wooden lobby with warm vintage lights."></div>
-  <div class="img-container"><img src="zachclub.jpeg" style="width:100%" alt="Man with brown hair drinking a beer in a purple and blue lit club."></div>
-  <div class="img-container"><img src="cntower1.png" style="width:100%" alt="The CN tower, lit up as the sun starts to set."></div>
+  <div class="img-container">
+  <a href="#img1"><img src="thrift1.png" style="width:100%" alt="Hands sifting through nice suit jackets at a thrift store."></a>
   </div>
-  
-  <div class="column">
-  <div class="img-container"><img src="zach2.JPG" style="width:100%" alt="Dark-haired man jumping a ramp at the skatepark on a BMX bike."></div>
-  <div class="img-container"><img src="thrift2.JPG" style="width:100%" alt="A sunglass rack in a thrift store with a rack of colourful clothes in the background."></div>
-  <div class="img-container"><img src="ferris.jpeg" style="width:100%" alt="A pink ferris wheel against a light blue sku with fluffy clouds."></div>
-  <div class="img-container"><img src="festival.jpeg" style="width:100%" alt="A low sun starting to set over a field of people at a music festival."></div>
-  <div class="img-container"><img src="fireworks.jpeg" style="width:100%" alt="Red and yellow fireworks going off in the night sky behind the silhouettes of a married couple."></div>
-  <div class="img-container"><img src="flowerwall.jpeg" style="width:100%" alt="A wall of light pink flowers with a pink neon sign that says 'Hello Gorgeous'."></div>
-  <div class="img-container"><img src="france.jpeg" style="width:100%" alt="The front pillars of a stone Roman collosseum in France."></div>
-  <div class="img-container"><img src="hallway.jpeg" style="width:100%" alt="A dark hallway with big windows and bright sunlight streaming through the windows."></div>
-  <div class="img-container"><img src="pillar.jpeg" style="width:100%" alt="A wooden pillar with colourful wooden tabs directing to surrounding landmarks."></div>
-  <div class="img-container"><img src="oliver6.png" style="width:100%" alt="Blonde-haired man looking up with a green bush in front of him."></div>
-  <div class="img-container"><img src="zach11.JPG" style="width:100%" alt="Dark-haired man grinding a rail at the skatepark on a BMX bike."></div>
-  <div class="img-container"><img src="zoe5.jpeg" style="width:100%" alt="A blonde haired girl sitting on a wood bench with a green field and blue lake behind her. ."></div>
-  <div class="img-container"><img src="Sunflower.JPG" style="width:100%" alt="The dead head of a sunflower on a cloudy fall day."></div>
-  <div class="img-container"><img src="cornmaze1.JPG" style="width:100%" alt="A wood hut reading 'corn maze relief station' peeks out above the rows of a corn maze."></div>
-  <div class="img-container"><img src="appletree.JPG" style="width:100%" alt="The branch of an apple tree, with two red apples nustled in behind the leaves."></div>
-  <div class="img-container"><img src="roses.jpeg" style="width:100%" alt="Closeup image of a bouquet of light pink roses with dark green leaves."></div>
-  <div class="img-container"><img src="radiocity.jpeg" style="width:100%" alt="The sun setting behind the Radio City building in New York City."></div>
-  <div class="img-container"><img src="toronto1.jpeg" style="width:100%" alt="A beautiful glass and white stone building in Toronto."></div>
-  <div class="img-container"><img src="Zebra.jpeg" style="width:100%" alt="A painting of a Zebra's face next to a zebra-print painted wall."></div>
-  <div class="img-container"><img src="core.JPG" style="width:100%" alt="A hand holding a half-eaten yellow apple, with green leaves out of focus in the background."></div>
-  <div class="img-container"><img src="Empire.JPG" style="width:100%" alt="A sign reading 'empire' in front of a row of apple trees."></div>
-  <div class="img-container"><img src="Intersection.JPG" style="width:100%" alt="Two street signs intersecting."></div>
-  <div class="img-container"><img src="lion.jpeg" style="width:100%" alt="A smiling female lion sitting calmly behind glass."></div>
-  <div class="img-container"><img src="jack2.JPG" style="width:100%" alt="A small black and white dog looking to the side with a brown plush toy in his mouth."></div>
-  <div class="img-container"><img src="Corn.JPG" style="width:100%" alt="A corn cob half peeled with dead corn stalks in the background."></div>
-  <div class="img-container"><img src="tiger1.jpeg" style="width:100%" alt="A large tiger mid-step, walking towards the camera with its mouth open."></div>
-  <div class="img-container"><img src="appletree.JPG" style="width:100%" alt="The branch of an apple tree, with two red apples nustled in behind the leaves."></div>
-  <div class="img-container"><img src="zach1.JPG" style="width:100%" alt="Dark-haired man popping a wheelie on a BMX bike at the skatepark."></div>
+    
+  <div class="img-container">
+  <a href="#img2"><img src="boats1.jpeg" style="width:100%" alt="A white boat in the water on an ocean coastline next to a row of colourful sheds."></a>
   </div>
-  
-  <div class="column">
-  <div class="img-container"><img src="sunset1.jpeg" style="width:100%" alt="The sun setting behind a white building next to a line of parked cars."></div>
-  <div class="img-container"><img src="sunlight.jpeg" style="width:100%" alt="Sun shining through the petals of white flowers on a tree."></div>
-  <div class="img-container"><img src="Plant.png" style="width:100%" alt="A green fern against a blue wall."></div>
-  <div class="img-container"><img src="lavender1.jpeg" style="width:100%" alt="A bumble bee perching on sprouts of dark purple lavender."></div>
-  <div class="img-container"><img src="zach10.JPG" style="width:100%" alt="Dark-haired man grinding a rail at the skatepark on a BMX bike."></div>
-  <div class="img-container"><img src="oliver1.jpeg" style="width:100%" alt="The shoulder of a blonde man taking a photo of the sunset in front of him."></div>
-  <div class="img-container"><img src="zoe3.jpeg" style="width:100%" alt="A blonde-haired girl sitting on a wooden dock next to a lake with her leg out, smiling at the camera."></div>
-  <div class="img-container"><img src="flower5.jpeg" style="width:100%" alt="Purple flowers with bright green stems with dew dops fresh on the petals."></div>
-  <div class="img-container"><img src="lavender.jpeg" style="width:100%" alt="A dark purple Muskoka chair tucked in between rows of blooming lavender on a hill."></div>
-  <div class="img-container"><img src="leaves1.jpeg" style="width:100%" alt="Bright sun shining through dark leaves on a somewhat cloudy day."></div>
-  <div class="img-container"><img src="skatepark.jpeg" style="width:100%" alt="Beautiful orange sunset reflecting in a puddle at a skatepark."></div>
-  <div class="img-container"><img src="oliver3.png" style="width:100%" alt="A blonde-haired man smiling at the camera."></div>
-  <div class="img-container"><img src="oliver8.png" style="width:100%" alt="Blonde-haired man looking at the camera with a green bush behind him."></div>
-  <div class="img-container"><img src="Skulls.JPG" style="width:100%" alt="Three plastic skulls hanging on a string on a cloudy fall day."></div>
-  <div class="img-container"><img src="bar.png" style="width:100%" alt="The storefront of a bar in Toronto with a sign reading 'Toronto's Oldest Bar'."></div>
-  <div class="img-container"><img src="claw.jpg" style="width:100%" alt="A row of pink claw machines with bright pink lights."></div>
-  <div class="img-container"><img src="cntower2.jpeg" style="width:100%" alt="Image of the CN Tower from below a tall flight of stairs."></div>
-  <div class="img-container"><img src="freak.JPG" style="width:100%" alt="Graffiti on a cement block at a skatepark reading 'FREAK MODE'."></div>
-  <div class="img-container"><img src="rogers.png" style="width:100%" alt="The Rogers Centre and Aquarium lit up with colourful LEDs after dark."></div>
-  <div class="img-container"><img src="Tremor.JPG" style="width:100%" alt="Dark-haired man BMX biking down a ramp that reads 'TREMOR'."></div>
-  <div class="img-container"><img src="christmas.jpeg" style="width:100%" alt="White Christmas tree with red and green ornaments and sparkling gold lights."></div>
-  <div class="img-container"><img src="corn1.JPG" style="width:100%" alt="A corn cob half peeled with little red spots in the middle."></div>
-  <div class="img-container"><img src="thorns.jpeg" style="width:100%" alt="An overhead shot of a thorny vine."></div>
-  <div class="img-container"><img src="leaves1.jpeg" style="width:100%" alt="Bright sun shining through dark leaves on a somewhat cloudy day."></div>
-  <div class="img-container"><img src="flowers9.jpeg" style="width:100%" alt="Reddish-orange flowers with dark green leaves in front of a darkening sunset."></div>
-  <div class="img-container"><img src="zach5.JPG" style="width:100%" alt="Dark-haired man jumping a ramp at the skatepark on a BMX bike."></div>
-  <div class="img-container"><img src="zach9.JPG" style="width:100%" alt="Dark-haired man jumping a ramp at the skatepark on a BMX bike."></div>
-  <div class="img-container"><img src="zach7.JPG" style="width:100%" alt="Dark-haired man jumping a ramp at the skatepark on a BMX bike."></div>
+      
+  <div class="img-container">
+  <a href="#img3"><img src="boats.jpeg" style="width:100%" alt="A white boat next to a dirt path with a sunset in the background."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img4"><img src="bridge.jpeg" style="width:100%" alt="Pont Du Gard France, an old aqueduct stone bridge."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img5"><img src="building.jpeg" style="width:100%" alt="An image of an oddly shaped glass office building downtown Toronto."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img6"><img src="cafe.jpeg" style="width:100%" alt="The storefront of the Starlight Cafe in Stratford, a blue front with a bright orange sign."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="img7"><img src="cafe1.jpeg" style="width:100%" alt="Image of a small cafe in Waterloo with cool gold lights and black stools."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img8"><img src="car.jpeg" style="width:100%" alt="A lone black car in an empty snowy parking lot with orange sky behind."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img9"><img src="Halloween.JPG" style="width:100%" alt="The lanky hand of a creepy halloween decoration reaching toward the camera."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img10"><img src="beach.jpeg" style="width:100%" alt="Sandy beach on a sunny day."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img11"><img src="Ducks.JPG" style="width:100%" alt="Two duck swimming up the river on a cloudy day."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img12"><img src="fall.jpeg" style="width:100%" alt="A maple tree on a sunny tree with the leaves starting to turn orange."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img13"><img src="turtle.jpeg" style="width:100%" alt="Sea turtle in an aquarium tank."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img14"><img src="jack.JPG" style="width:100%" alt="A small black and white dog looking up at the camera."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img15"><img src="corncob2.JPG" style="width:100%" alt="A corn cob half peeled with dead corn stalks in the background."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img16"><img src="beach1.jpeg" style="width:100%" alt="A sand beach at dusk with a sunset starting on the horizon."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img17"><img src="berries.jpeg" style="width:100%" alt="A red berry bush with green leaves under the bright sun."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img18"><img src="cat.jpeg" style="width:100%" alt="Tabby cat with orange eyes leaning on a door window."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img19"><img src="flower.jpeg" style="width:100%" alt="Blooming pink flowers on a greenish-brown tree."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img20"><img src="flower6.jpeg" style="width:100%" alt="White bell-shaped flowers with brown spots with fresh dew on the petals."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img21"><img src="festival1.jpeg" style="width:100%" alt="A girl with blonde hair wearing blue jeans walking towards a crowd of people at a music festival."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img22"><img src="oliver7.png" style="width:100%" alt="Blonde-haired man looking to up at the CN Tower behind him."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img23"><img src="zoe2.jpeg" style="width:100%" alt="A blonde girl sitting on a wooden dock next to a lake."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img24"><img src="zoe4.jpeg" style="width:100%" alt="A blonde-haired girl sitting on a wooden dock next to a lake, smiling at the camera."></a>
+  </div>
+      
+  <div class="img-container">
+  <a href="#img25"><img src="oliver4.png" style="width:100%" alt="A blonde man looking to his side with a white building behind him."></a>
   </div>
 </div>
+  
+  <div class="column">
+  <div class="img-container">
+  <a href="#img26"><img src="church.jpeg" style="width:100%" alt="A white church with a red roof on a hill with a sunset behind it."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img27"><img src="katie.png" style="width:100%" alt="A blonde haired girl sitting in the dark, illuminated by red light."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img28"><img src="lavender2.jpeg" style="width:100%" alt="Bumble bee perches on a sprout of light purple lavender."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img29"><img src="zoe7.jpeg" style="width:100%" alt="A blonde-haired girl looking behind her at the orange sunset at a music festival."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img30"><img src="Club.jpeg" style="width:100%" alt="A neon sign that says 'please don't do coke in the bathroom' in a dark club with purple and red lights."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img31"><img src="concert.jpeg" style="width:100%" alt="Sun setting behind a crowd of people outside of Budweiser stadium."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img32"><img src="feeder.jpeg" style="width:100%" alt="A bird feeder shaped like a bluejay against a pink sun setting over the ocean."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img33"><img src="hotel.jpeg" style="width:100%" alt="Leather sofas in a big room with old wood and ornate decor."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img34"><img src="newfoundland.jpeg" style="width:100%" alt="A blonde woman leaning on a railing next to a pond with mountains and a sunset behind her."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img35"><img src="pier.jpeg" style="width:100%" alt="A set of white boats on a wooden slat pier next to the ocean, with the sun starting to set in the background."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img36"><img src="sand.jpeg" style="width:100%" alt="A piece of colourful fabric with a silver bell draped over a sandy beach with a low, hazy sun in the background."></a>
+  </div>
+    
+  <div class="img-container">
+    <a href="#img37"><img src="statue.jpeg" style="width:100%" alt="statue of a lion in front of the New York City public library."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img38"><img src="stonewall.jpeg" style="width:100%" alt="An old stone wall with 'Chateau' carved into the side."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img39"><img src="sunset.jpeg" style="width:100%" alt="A colourful sunset outside of the window, seen behind a made bed in a dark room."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img40"><img src="toronto.jpeg" style="width:100%" alt="A tall glass building in Toronto on a sunny day."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img41"><img src="sunflower2.JPG" style="width:100%" alt="Two dead sunflowers bent over each other on a cloudy fall day."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img42"><img src="ice.jpeg" style="width:100%" alt="Light shining through the ice-coated slim branches of a weeping willow tree."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img43"><img src="plant2.png" style="width:100%" alt="A fern leaf in front of a glass building as it starts to get dark out."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img44"><img src="lavender3.jpeg" style="width:100%" alt="Sprouts of dark purple lavender on a cloudy day."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img45"><img src="fish.jpeg" style="width:100%" alt="A gray fish in an aquarium tank, nesstled in with some coral."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img46"><img src="zoe1.jpeg" style="width:100%" alt="A blonde-haired girl sitting on a wooden dock on next to a lake."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img47"><img src="lifeguard.jpeg" style="width:100%" alt="A bright red wooden stand holding a life saver against the dark blue ocean."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img48"><img src="lobby.jpeg" style="width:100%" alt="A set of ornate wood rocking chairs in an old wooden lobby with warm vintage lights."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img49"><img src="zachclub.jpeg" style="width:100%" alt="Man with brown hair drinking a beer in a purple and blue lit club."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img50"><img src="cntower1.png" style="width:100%" alt="The CN tower, lit up as the sun starts to set."></a>
+  </div>
+</div>
+  
+  <div class="column">
+  <div class="img-container">
+  <a href="#img51"><img src="zach2.JPG" style="width:100%" alt="Dark-haired man jumping a ramp at the skatepark on a BMX bike."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img52"><img src="thrift2.JPG" style="width:100%" alt="A sunglass rack in a thrift store with a rack of colourful clothes in the background."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img53"><img src="ferris.jpeg" style="width:100%" alt="A pink ferris wheel against a light blue sku with fluffy clouds."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img54"><img src="festival.jpeg" style="width:100%" alt="A low sun starting to set over a field of people at a music festival."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img55"><img src="fireworks.jpeg" style="width:100%" alt="Red and yellow fireworks going off in the night sky behind the silhouettes of a married couple."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img56"><img src="flowerwall.jpeg" style="width:100%" alt="A wall of light pink flowers with a pink neon sign that says 'Hello Gorgeous'."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img57"><img src="france.jpeg" style="width:100%" alt="The front pillars of a stone Roman collosseum in France."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img58"><img src="hallway.jpeg" style="width:100%" alt="A dark hallway with big windows and bright sunlight streaming through the windows."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img59"><img src="pillar.jpeg" style="width:100%" alt="A wooden pillar with colourful wooden tabs directing to surrounding landmarks."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img60"><img src="oliver6.png" style="width:100%" alt="Blonde-haired man looking up with a green bush in front of him."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img61"><img src="zach11.JPG" style="width:100%" alt="Dark-haired man grinding a rail at the skatepark on a BMX bike."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img62"><img src="zoe5.jpeg" style="width:100%" alt="A blonde haired girl sitting on a wood bench with a green field and blue lake behind her."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img63"><img src="Sunflower.JPG" style="width:100%" alt="The dead head of a sunflower on a cloudy fall day."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img64"><img src="cornmaze1.JPG" style="width:100%" alt="A wood hut reading 'corn maze relief station' peeks out above the rows of a corn maze."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img65"><img src="appletree.JPG" style="width:100%" alt="The branch of an apple tree, with two red apples nustled in behind the leaves."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img66"><img src="roses.jpeg" style="width:100%" alt="Closeup image of a bouquet of light pink roses with dark green leaves."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img67"><img src="radiocity.jpeg" style="width:100%" alt="The sun setting behind the Radio City building in New York City."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img68"><img src="toronto1.jpeg" style="width:100%" alt="A beautiful glass and white stone building in Toronto."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img69"><img src="Zebra.jpeg" style="width:100%" alt="A painting of a Zebra's face next to a zebra-print painted wall."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img70"><img src="core.JPG" style="width:100%" alt="A hand holding a half-eaten yellow apple, with green leaves out of focus in the background."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img71"><img src="Empire.JPG" style="width:100%" alt="A sign reading 'empire' in front of a row of apple trees."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img72"><img src="Intersection.JPG" style="width:100%" alt="Two street signs intersecting."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img73"><img src="lion.jpeg" style="width:100%" alt="A smiling female lion sitting calmly behind glass."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img74"><img src="jack2.JPG" style="width:100%" alt="A small black and white dog looking to the side with a brown plush toy in his mouth."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img75"><img src="Corn.JPG" style="width:100%" alt="A corn cob half peeled with dead corn stalks in the background."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img76"><img src="tiger1.jpeg" style="width:100%" alt="A large tiger mid-step, walking towards the camera with its mouth open."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img77"><img src="appletree.JPG" style="width:100%" alt="The branch of an apple tree, with two red apples nustled in behind the leaves."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img78"><img src="zach1.JPG" style="width:100%" alt="Dark-haired man popping a wheelie on a BMX bike at the skatepark."></a>
+  </div>
+</div>
+  
+  <div class="column">
+  <div class="img-container">
+  <a href="#img79"><img src="sunset1.jpeg" style="width:100%" alt="The sun setting behind a white building next to a line of parked cars."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img80"><img src="sunlight.jpeg" style="width:100%" alt="Sun shining through the petals of white flowers on a tree."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img81"><img src="Plant.png" style="width:100%" alt="A green fern against a blue wall."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img82"><img src="lavender1.jpeg" style="width:100%" alt="A bumble bee perching on sprouts of dark purple lavender."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img83"><img src="zach10.JPG" style="width:100%" alt="Dark-haired man grinding a rail at the skatepark on a BMX bike."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img84"><img src="oliver1.jpeg" style="width:100%" alt="The shoulder of a blonde man taking a photo of the sunset in front of him."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img85"><img src="zoe3.jpeg" style="width:100%" alt="A blonde-haired girl sitting on a wooden dock next to a lake with her leg out, smiling at the camera."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img86"><img src="flower5.jpeg" style="width:100%" alt="Purple flowers with bright green stems with dew dops fresh on the petals."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img87"><img src="lavender.jpeg" style="width:100%" alt="A dark purple Muskoka chair tucked in between rows of blooming lavender on a hill."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img88"><img src="leaves1.jpeg" style="width:100%" alt="Bright sun shining through dark leaves on a somewhat cloudy day."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img89"><img src="skatepark.jpeg" style="width:100%" alt="Beautiful orange sunset reflecting in a puddle at a skatepark."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img90"><img src="oliver3.png" style="width:100%" alt="A blonde-haired man smiling at the camera."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img91"><img src="oliver8.png" style="width:100%" alt="Blonde-haired man looking at the camera with a green bush behind him."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img92"><img src="Skulls.JPG" style="width:100%" alt="Three plastic skulls hanging on a string on a cloudy fall day."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img93"><img src="bar.png" style="width:100%" alt="The storefront of a bar in Toronto with a sign reading 'Toronto's Oldest Bar'."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img94"><img src="claw.jpg" style="width:100%" alt="A row of pink claw machines with bright pink lights."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img95"><img src="cntower2.jpeg" style="width:100%" alt="Image of the CN Tower from below a tall flight of stairs."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img96"><img src="freak.JPG" style="width:100%" alt="Graffiti on a cement block at a skatepark reading 'FREAK MODE'.">
+  </div>
+    
+  <div class="img-container">
+  <a href="#img97"><img src="rogers.png" style="width:100%" alt="The Rogers Centre and Aquarium lit up with colourful LEDs after dark."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img98"><img src="Tremor.JPG" style="width:100%" alt="Dark-haired man BMX biking down a ramp that reads 'TREMOR'."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img99"><img src="christmas.jpeg" style="width:100%" alt="White Christmas tree with red and green ornaments and sparkling gold lights."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img100"><img src="corn1.JPG" style="width:100%" alt="A corn cob half peeled with little red spots in the middle."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img101"><img src="thorns.jpeg" style="width:100%" alt="An overhead shot of a thorny vine."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img102"><img src="leaves1.jpeg" style="width:100%" alt="Bright sun shining through dark leaves on a somewhat cloudy day."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img103"><img src="flowers9.jpeg" style="width:100%" alt="Reddish-orange flowers with dark green leaves in front of a darkening sunset."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img104"><img src="zach5.JPG" style="width:100%" alt="Dark-haired man jumping a ramp at the skatepark on a BMX bike."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img105"><img src="zach9.JPG" style="width:100%" alt="Dark-haired man jumping a ramp at the skatepark on a BMX bike."></a>
+  </div>
+    
+  <div class="img-container">
+  <a href="#img106"><img src="zach7.JPG" style="width:100%" alt="Dark-haired man jumping a ramp at the skatepark on a BMX bike."></a>
+  </div>
+ </div>
+</div>
 
+<div id="img1" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="thrift1.png" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img2" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="boats1.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img3" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="boats.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+  
+  <div id="img4" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="bridge.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img5" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="building.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img6" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="cafe.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+
+<div id="img7" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="cafe1.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img8" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="car.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img9" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="Halloween.JPG" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+
+<div id="img10" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="beach.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img11" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="Ducks.JPG" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img12" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="Fall.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+
+<div id="img13" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="turtle.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img14" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="jack.JPG" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img15" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="corncob2.JPG" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+  <div id="img16" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="beach1.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img17" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="berries.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img18" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="cat.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+
+<div id="img19" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="flower.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img20" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="flower6.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img21" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="festival1.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+
+<div id="img22" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="oliver7.png" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img23" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="zoe2.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img24" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="zoe4.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+
+<div id="img25" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="oliver4.png" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img26" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="church.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img27" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="katie.png" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+
+<div id="img28" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="lavender2.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img29" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="zoe7.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img30" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="club.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+  
+<div id="img31" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="concert.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img32" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="feeder.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img33" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="hotel.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img34" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="newfoundland.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img35" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="pier.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img36" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="sand.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img37" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="statue.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img38" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="stonewall.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img39" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="sunset.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img40" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="toronto.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img41" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="sunflower2.JPG" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img42" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="ice.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img43" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="plant2.png" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img44" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="lavender3.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img45" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="fish.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img46" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="zoe1.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img47" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="lifeguard.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img48" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="lobby.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img49" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="zachclub.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img50" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="cntower1.png" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img51" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="zach2.JPG" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img52" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="thrift2.JPG" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img53" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="ferris.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img54" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="festival.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img55" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="fireworks.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img56" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="flowerwall.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img57" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="france.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img58" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="hallway.jpeg" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img59" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="pillar.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img60" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="oliver6.png" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img61" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="zach11.JPG" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img62" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="zoe5.jpeg" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img63" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="sunflower.JPG" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+<div id="img64" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="cornmaze1.JPG" alt="Blonde-haired girl walking across a parking lot at a festival.">
+</div>
+  
+<div id="img65" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="appletree.JPG" alt="man looking up at a building behind him.">
+</div>
+
+<div id="img66" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="Roses.jpeg" alt="blonde-haired girl sitting on wood dock looking out at a lake.">
+</div>
+    
+    
 <footer>
   <p>CONTACT:    <a href="karmclea@uwaterloo.ca">karmclea@uwaterloo.ca</a></p>
 </footer>
