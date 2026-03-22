@@ -176,6 +176,22 @@
   color: white;
   text-decoration: none;
 }
+      
+  .contact-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+  .contact-line::before,
+  .contact-line::after {
+  content: "★ ★ ★ ★ ★";
+  color: white;
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+      
   @media screen and (max-width: 800px) {
   .column {
   flex: 50%;
@@ -210,8 +226,8 @@
           <li><a href="/">HOME</a></li>
           <li><a href="/">PEOPLE</a></li>
           <li><a href="/">PLACES</a></li>
-          <li><a href="/">NATURE</a></li>
-          <li><a href="/">ABOUT</a></li>
+          <li><a href="https://katherinemclean06-cpu.github.io/final-nature/">NATURE</a></li>
+          <li><a href="https://katherinemclean06-cpu.github.io/about/">ABOUT</a></li>
       </ul>
     </nav>
   </div>
@@ -1080,8 +1096,7 @@
 </div>
   
 <footer>
-  <p>CONTACT:    <a href="karmclea@uwaterloo.ca">karmclea@uwaterloo.ca</a></p>
-</footer>
+<p class="contact-line">CONTACT: <a href="karmclea@uwaterloo.ca">karmclea@uwaterloo.ca</a></p></footer>
     
   </body>
 </html>
